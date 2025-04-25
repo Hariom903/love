@@ -7,6 +7,14 @@
   <META NAME="Keywords" CONTENT="">
   <META NAME="Description" CONTENT="">
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  
   <style>
   html, body {
   height: 100%;
@@ -16,9 +24,6 @@
 }
 canvas {
   position: absolute;
-  width: 100%;
-  height: 100%;
-}
 h1{
 
   color: aqua;
@@ -27,9 +32,54 @@ h1{
   </style>
  </HEAD>
  <BODY>
-    <center><h1>Hi my love</h1></center>
+    <center><h1>  </h1></center>
+  <div class="row">
+  <div class="col-12 col-sm-4">
+    <div class="home-demo">
+  <h3>Carousel</h3>
+  <div class="owl-carousel owl-theme">
+    <div class="item">
+      <h2>Swipe</h2>
+    </div>
+    <div class="item">
+      <h2>Drag</h2>
+    </div>
+    <div class="item">
+      <h2>Responsive</h2>
+    </div>
+    <div class="item">
+      <h2>CSS3</h2>
+    </div>
+    <div class="item">
+      <h2>Fast</h2>
+    </div>
+    <div class="item">
+      <h2>Easy</h2>
+    </div>
+    <div class="item">
+      <h2>Free</h2>
+    </div>
+    <div class="item">
+      <h2>Upgradable</h2>
+    </div>
+    <div class="item">
+      <h2>Tons of options</h2>
+    </div>
+    <div class="item">
+      <h2>Infinity</h2>
+    </div>
+    <div class="item">
+      <h2>Auto Width</h2>
+    </div>
+  </div>
+</div>
+  </div>
+
+   <div class =" col-12 col-sm-4" >
   <div class="box">
     <canvas id="pinkboard"></canvas>
+  </div>
+   </div>
   </div>
 <script>
 var settings = {
@@ -262,6 +312,18 @@ var ParticlePool = (function() {
     render();
   }, 10);
 })(document.getElementById('pinkboard'));
+
+ $(function() {
+  // Owl Carousel
+  var owl = $(".owl-carousel");
+  owl.owlCarousel({
+    items: 3,
+    margin: 10,
+    loop: true,
+    nav: true
+  });
+});
+
   </script>
  </BODY>
 </HTML>
